@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  base-rust-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: base-rust-server:latest
+    restart: "no"
+    container_name: base-rust-server

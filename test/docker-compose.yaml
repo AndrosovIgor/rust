@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  base-rust-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rust-server:latest
+    restart: "no"
+    container_name: rust-server
+    ports:
+      - "28015:28015"
+    volumes:
+      - ./rust_data:/root/server/server

@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  rust-vanilla:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rust-vanilla:latest
+    restart: "no"
+    container_name: rust-vanilla

@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  base-oxide-rust-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: base-oxide-rust-server:latest
+    restart: "no"
+    container_name: base-oxide-rust-server
